@@ -1,0 +1,8 @@
+#menu-vertical {
+    flex-direction: column;
+    position: fixed;
+    top: var(--menu-horizontal-height);
+    height: calc(100vh - var(--menu-horizontal-height));
+    background-color: var(--bs-bg-darker);
+    width: 15.875rem;
+}

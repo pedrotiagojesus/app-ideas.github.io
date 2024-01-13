@@ -1,0 +1,14 @@
+#menu-horizontal {
+    position: fixed;
+    height: var(--menu-horizontal-height);
+    background-color: var(--bs-bg-darker);
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid #31374a;
+
+    --bs-emphasis-color-rgb: 255, 255, 255;
+}
+#menu-horizontal .navbar-brand {
+    margin-left: 1.25rem;
+}

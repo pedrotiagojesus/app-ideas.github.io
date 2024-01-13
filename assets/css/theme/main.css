@@ -1,0 +1,9 @@
+main > .content {
+    padding: calc(var(--menu-horizontal-height) + 2rem) 2rem 2rem calc(var(--menu-vertical-width) + 2rem);
+    min-height: 100vh;
+}
+
+main > .content .card {
+    --bs-card-bg: #fff;
+    --bs-card-height: 100%;
+}
