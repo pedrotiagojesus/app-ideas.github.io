@@ -29,7 +29,8 @@
 		<link href="./assets/css/theme/form.css" rel="stylesheet" />
 		<link href="./assets/css/menu-horizontal.css" rel="stylesheet" />
 		<link href="./assets/css/menu-vertical.css" rel="stylesheet" />
-		<link href="./assets/css/bin2dec.css" rel="stylesheet" />
+		<link href="./assets/css/menu-vertical.css" rel="stylesheet" />
+		<link href="./assets/css/border-radius.css" rel="stylesheet" />
 	</head>
 	<body>
 
@@ -82,30 +83,26 @@
                 </div>
             </nav>
 
-            <div id="bin2dec" class="content">
+            <div id="border-radius" class="content">
 
 				<div class="card">
 					<div class="card-body">
-						<h3 class="card-title">Bin2Dec</h3>
-						<p class="card-text">Binary is the number system all digital computers are based on. Therefore it's important for developers to understand binary, or base 2, mathematics. The purpose of Bin2Dec is to provide practice and understanding of how binary calculations.</p>
-						<form class="row needs-validation" novalidate>
-							<div class="col-md-6">
-								<div class="form-floating mb-3">
-									<input type="text" class="form-control" id="binary" placeholder="">
-									<label for="binary" class="form-label">Binary</label>
-									<div class="invalid-feedback">
-										You entered a non-binary digit (please enter only 0 or 1).
-									</div>
-								</div>
+						<h3 class="card-title">Border-radius Previewer</h3>
+						<p class="card-text">The border-radius property can have multiple values changed. Preview how the shape looks while changing these values.</p>
+						<div class="border-radius-wrapper">
+							<div class="d-flex flex-column justify-content-between">
+								<input type="text" id="border-radius-top-left" class="form-control" value="0" maxlength="3" autocomplete="new-password">
+								<input type="text" id="border-radius-bottom-left" class="form-control" value="0" maxlength="3" autocomplete="new-password">
 							</div>
-							<div class="col-md-6">
-								<div class="form-floating mb-3">
-									<input type="text" class="form-control" id="decimal" placeholder="">
-									<label for="decimal" class="form-label">Decimal</label>
-								</div>
+							<div id="preview" class="form-control"></div>
+							<div class="d-flex flex-column justify-content-between">
+								<input type="text" id="border-radius-top-right" class="form-control" value="0" maxlength="3" autocomplete="new-password">
+								<input type="text" id="border-radius-bottom-right" class="form-control" value="0" maxlength="3" autocomplete="new-password">
 							</div>
-						</form>
-
+						</div>
+						<div id="display-code">
+							<pre></pre>
+						</div>
 					</div>
 				</div>
 

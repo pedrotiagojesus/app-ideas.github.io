@@ -9,6 +9,33 @@
 
     --bs-emphasis-color-rgb: 255, 255, 255;
 }
+
 #menu-horizontal .navbar-brand {
     margin-left: 1.25rem;
+    padding: 0;
+}
+
+/* SM */
+
+@media (min-width: 576px) {
+}
+
+/* MD */
+
+@media (min-width: 768px) {
+}
+
+/* LG  */
+
+@media (min-width: 992px) {
+}
+
+/* XL */
+
+@media (min-width: 1200px) {
+}
+
+/* XL */
+
+@media (min-width: 1400px) {
 }

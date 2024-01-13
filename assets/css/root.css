@@ -4,10 +4,13 @@
 	--bs-body-bg: #f5f7fa;
 	--bs-body-bg-rgb: 245, 247, 250;
 
+	--bs-secondary-color: #3e465b;
+	--bs-secondary-color-rgb: 62, 70, 91;
+
 	--bs-bg-darker: #222834;
 
-	--menu-horizontal-height: 4rem;
-	--menu-vertical-width: 15.875rem;
+	--menu-horizontal-height: 3rem;
+	--menu-vertical-width: 0rem;
 }
 
 /* SM */
@@ -39,6 +42,9 @@
 @media (min-width: 1200px) {
 	:root {
 		--font-size: 16px;
+
+		--menu-horizontal-height: 4rem;
+		--menu-vertical-width: 15.875rem;
 	}
 }
 

@@ -1,9 +1,7 @@
 import { Core } from './core.js';
 
 /**
- * IMC Calculator
- *
- * Allow the user to know IMC result of the calculation.
+ * BIN to Dec
  *
  * @author Pedro Jesus <pedrotiagojesus1995@gmail.com>
  * @since 13-01-2024 First time this was introduced.
@@ -119,13 +117,24 @@ class Bin2dec extends Core {
 
             event.preventDefault();
 
-            this._binaryValue = this.value;
+            scope._binaryValue = this.value;
 
-            if (!await scope.isBinary(this._binaryValue)) {
+            if (!await scope.isBinary()) {
                 scope._binaryInputEl.classList.add('is-invalid');
-            } else {
-                scope._binaryInputEl.classList.remove('is-invalid');
+                scope._decimalValue = null;
+                scope.updateDecimal();
+                return;
             }
+
+            scope._binaryInputEl.classList.remove('is-invalid');
+
+            if (scope._binaryValue != '') {
+                scope._decimalValue = scope.convertBin2Dec();
+            } else {
+                scope._decimalValue = '';
+            }
+
+            scope.updateDecimal();
 
         });
 
@@ -133,7 +142,30 @@ class Bin2dec extends Core {
 
     }
 
-    async isBinary(str) {
+    updateDecimal() {
+
+        this._decimalInputEl.value = this._decimalValue;
+
+    }
+
+    convertBin2Dec() {
+
+        var binary = this._binaryValue.split('').reverse();
+        var decimal = 0;
+
+        for (let i = 0; i < binary.length; i++) {
+
+
+            decimal += Number(binary[i] * (2 ** i));
+
+        }
+
+        return decimal;
+    }
+
+    async isBinary() {
+
+        var str = this._binaryValue;
 
         for (let i = 0; i < str.length; i++) {
             if (str[i] == "0" || str[i] == "1") {

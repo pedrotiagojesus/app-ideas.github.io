@@ -1,0 +1,3 @@
+#bin2dec > .card {
+    height: calc(100vh - var(--menu-horizontal-height) - var(--content-padding) - var(--content-padding));
+}

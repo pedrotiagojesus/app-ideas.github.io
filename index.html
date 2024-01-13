@@ -26,34 +26,63 @@
 		<!-- Theme -->
 		<link href="./assets/css/root.css" rel="stylesheet" />
 		<link href="./assets/css/theme/main.css" rel="stylesheet" />
+		<link href="./assets/css/theme/form.css" rel="stylesheet" />
 		<link href="./assets/css/menu-horizontal.css" rel="stylesheet" />
 		<link href="./assets/css/menu-vertical.css" rel="stylesheet" />
+		<link href="./assets/css/homepage.css" rel="stylesheet" />
 	</head>
 	<body>
 
         <main>
-            <nav id="menu-horizontal" class="navbar">
+            <nav id="menu-horizontal" class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a href="./index.html" class="navbar-brand">APP Ideas</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-vertical-content">
+						<span class="fa-solid fa-bars"></span>
+					</button>
                 </div>
             </nav>
 
-            <nav id="menu-vertical" class="nav">
-                <div class="content">
+            <nav id="menu-vertical" class="navbar navbar-expand-lg">
+                <div id="menu-vertical-content" class="content collapse navbar-collapse">
                     <p class="navbar-label">Apps</p>
                     <a class="nav-link" href="./bin2dec.html">
                         Bin2Dec
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="./border-radius.html">
                         Border Radius Previewer
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="./calculator.html">
                         Calculator
+                    </a>
+                    <a class="nav-link disabled" href="./christmas-lights.html">
+                        Christmas Lights
+                    </a>
+                    <a class="nav-link disabled" href="./cause-effect.html">
+                        Cause Effect App
+                    </a>
+                    <a class="nav-link disabled" href="./color-cycle.html">
+                        Color Cycle
+                    </a>
+                    <a class="nav-link disabled" href="./countdown-timer.html">
+                        Countdown Timer
+                    </a>
+                    <a class="nav-link disabled" href="./csv-json.html">
+                        CSV2JSON App
+                    </a>
+                    <a class="nav-link disabled" href="./dollar-cent.html">
+                        Dollars to Cents
+                    </a>
+                    <a class="nav-link disabled" href="./dynamic-css-variable.html">
+                        Dynamic CSS Variables
+                    </a>
+                    <a class="nav-link disabled" href="./first-db-app.html">
+                        First DB App
                     </a>
                 </div>
             </nav>
 
-            <div class="content">
+            <div id="homepage" class="content">
                 <div class="row">
 
                     <div class="col-md-3">
@@ -71,7 +100,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Border Radius Previewer</h5>
                                 <p class="card-text">Preview how CSS3 border-radius values affect an element</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="./border-radius.html" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +110,87 @@
                             <div class="card-body">
                                 <h5 class="card-title">Calculator</h5>
                                 <p class="card-text">Calculator</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="./calculator.html" class="btn btn-primary disabled">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Christmas Lights</h5>
+                                <p class="card-text">Simulate a string of Christmas lights</p>
+                                <a href="./christmas-lights.html" class="btn btn-primary disabled">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Cause Effect App</h5>
+                                <p class="card-text">Click list item to display item details</p>
+                                <a href="./cause-effect.html" class="btn btn-primary disabled">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Color Cycle</h5>
+                                <p class="card-text">Cycle a color value through incremental changes</p>
+                                <a href="./color-cycle.html" class="btn btn-primary disabled">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Countdown Timer</h5>
+                                <p class="card-text">Event Countdown timer</p>
+                                <a href="./countdown-timer.html" class="btn btn-primary disabled">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">CSV2JSON App</h5>
+                                <p class="card-text">CSV to JSON converter</p>
+                                <a href="./csv-json.html" class="btn btn-primary disabled">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Dollars to Cents</h5>
+                                <p class="card-text">Convert dollars to cents</p>
+                                <a href="./dollar-cent.html" class="btn btn-primary disabled">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Dynamic CSS Variables</h5>
+                                <p class="card-text">Dynamically change CSS variable settings</p>
+                                <a href="./dynamic-css-variable.html" class="btn btn-primary disabled">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">First DB App</h5>
+                                <p class="card-text">Your first Database app!</p>
+                                <a href="./first-db-app.html" class="btn btn-primary disabled">Go somewhere</a>
                             </div>
                         </div>
                     </div>

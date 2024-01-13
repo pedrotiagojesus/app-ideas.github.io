@@ -1,0 +1,19 @@
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+    padding: 1rem;
+}
+
+.form-floating > label {
+    color: var(--bs-secondary-color);
+    font-weight: 700;
+    font-size: .64rem;
+    text-transform: uppercase;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext,
+.form-floating > .form-select {
+    height: calc(2.875rem + 2px);
+    min-height: calc(2.875rem + 2px);
+    line-height: 1.25;
+}
