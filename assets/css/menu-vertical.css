@@ -5,7 +5,7 @@
     border-right: 1px solid #31374a;
     align-items: start;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 
     --bs-navbar-padding-y: 0;
 
@@ -19,10 +19,6 @@
     --bs-nav-link-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
     --bs-nav-link-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
     --bs-nav-link-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
-    /*
-    --bs-nav-link-color: #9fa6bc;
-    --bs-nav-link-hover-color: #eff2f6;
-    */
 
     --bs-nav-link-font-size: 0.8rem;
 }

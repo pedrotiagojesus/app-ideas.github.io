@@ -1,0 +1,65 @@
+#calculator > .card {
+    height: calc(100vh - var(--menu-horizontal-height) - var(--content-padding) - var(--content-padding));
+}
+
+#calculator .device {
+    max-width: 540px;
+    background-color: var(--bs-gray-300);
+    padding: 2rem;
+}
+
+#calculator .display  {
+    height: 7.5rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#calculator .display  .accumulator {
+    color: #c5c5c5;
+    font-size: 2rem;
+    text-align: right;
+    line-height: 1;
+}
+
+#calculator .display .total {
+    color: #242529;
+    font-size: 3rem;
+    text-align: right;
+    line-height: 1;
+}
+
+#calculator .pad  {
+    display: flex;
+  flex-wrap: wrap;
+}
+
+#calculator .pad .btn {
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-border-radius: 0;
+    width: 25%;
+    --bs-btn-bg: var(--bs-gray-200);
+}
+
+#calculator .pad .btn[value="0"] {
+    width: 50%;
+}
+
+#calculator .pad .btn[value="="] {
+    --bs-btn-bg: var(--bs-primary);
+    color: #fff;
+    font-weight: bold;
+}
+
+#calculator .pad .btn[value="C"],
+#calculator .pad .btn[value="AC"],
+#calculator .pad .btn[value="%"],
+#calculator .pad .btn[value="/"],
+#calculator .pad .btn[value="*"],
+#calculator .pad .btn[value="-"],
+#calculator .pad .btn[value="+"] {
+    --bs-btn-bg: var(--bs-gray-400);
+}
