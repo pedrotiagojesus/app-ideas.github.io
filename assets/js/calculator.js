@@ -186,11 +186,11 @@ class Calculator extends Core {
         if (current != null) {
             total = this.processAction(total, current, action)
         }
-console.log(total);
+
         if (total.toString().length > 8) {
             total = 'ERR';
         }
-console.log(total);
+
         this.count = []
         return total;
     }
