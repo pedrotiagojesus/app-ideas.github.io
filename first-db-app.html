@@ -92,10 +92,53 @@
                         <div class="btn-group mb-3">
                             <button type="button" class="btn btn-primary" id="load-db">Load DB</button>
                             <button type="button" class="btn btn-primary" id="query-db">Query DB</button>
-                            <button type="button" class="btn btn-primary" id="load-db">Load DB</button>
+                            <button type="button" class="btn btn-primary" id="clear-db">Clear DB</button>
                         </div>
 
-                        <h5>Customers</h5>
+                        <div class="row">
+                            <div class="col-md-8">
+
+                                <h5>Customers</h5>
+
+                                <table id="customer-wrapper" class="table">
+                                    <theade>
+                                        <tr>
+                                            <th>User ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </theade>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="col-md-3">
+
+                                <h5>Nofication</h5>
+
+                                <table id="notification-wrapper" class="table">
+                                    <tbody>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <template id="tpl-customer-line">
+                            <tr>
+                                <td data-tpl="user-id"></td>
+                                <td data-tpl="user-name"></td>
+                                <td data-tpl="user-email"></td>
+                            </tr>
+                        </template>
+
+                        <template id="tpl-notification-line">
+                            <tr>
+                                <td data-tpl="message"></td>
+                            </tr>
+                        </template>
 
 					</div>
 				</div>

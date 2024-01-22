@@ -1,12 +1,88 @@
 class Customer {
 
-    constructor(dbName) {
+    DBOpenRequest = null;
+
+    constructor(dbName, dbVersion) {
 
         this.dbName = dbName;
+        this.dbVersion = dbVersion;
+
         if (!window.indexedDB) {
-            window.alert("Your browser doesn't support a stable version of IndexedDB. \
-            Such and such feature will not be available.");
+            window.alert(
+                "Your browser doesn't support a stable version of IndexedDB. \
+                Such and such feature will not be available."
+            );
         }
+    }
+
+    /**
+     * Populate the Customer database with an initial set of customer data
+     * @param {[object]} customerData Data to add
+     * @memberof Customer
+     */
+    initialLoad = () => {
+
+        const DBOpenRequest = indexedDB.open(this.dbName, this.dbVersion);
+
+        DBOpenRequest.onerror = (event) => {
+            console.log(`initialLoad - Database error: ${event.target.errorCode} - ${event.target.message}`);
+        };
+
+        DBOpenRequest.onsuccess = (event) => {
+            const db = event.target.result;
+            console.log(`Database created: ${db.name}`);
+        };
+
+        DBOpenRequest.onupgradeneeded = (event) => {
+
+            const db = event.target.result;
+            const objectStore = db.createObjectStore('customers', { keyPath: 'userid' });
+
+            objectStore.onerror = (event) => {
+
+                console.log(`initialLoad - objectStore error: `, event.target.error.code,
+                " - ", event.target.error.message);
+            };
+
+            // Create an index to search customers by name and email
+            objectStore.createIndex('name', 'name', { unique: false });
+            objectStore.createIndex('email', 'email', { unique: true });
+
+            db.close();
+        };
+    }
+
+    bulkAddCustomer = (customerData) => {
+
+        const DBOpenRequest = indexedDB.open(this.dbName, this.dbVersion);
+
+        DBOpenRequest.onerror = (event) => {
+
+            console.log(`addCustomer - Database error: ${event.target.errorCode} - ${event.target.message}`);
+        };
+
+        DBOpenRequest.onsuccess = (event) => {
+
+            const db = event.target.result;
+            console.log('Add customer...');
+
+            const transaction = db.transaction(["customers"], "readwrite");
+
+            transaction.onerror = (event) => {
+
+                console.log(`addCustomer - Transaction error: ${event.target.errorCode} - ${event.target.message}`);
+            };
+
+            const objectStore = transaction.objectStore("customers");
+
+            // Populate the database with the initial set of rows
+            customerData.forEach(function(customer) {
+                objectStore.put(customer);
+            });
+
+            console.log('Customers added...');
+        }
+
     }
 
     /**
@@ -14,14 +90,12 @@ class Customer {
      * @memberof Customer
      */
     removeAllRows = () => {
-          const request = indexedDB.open(this.dbName, 1);
 
-        request.onerror = (event) => {
-            console.log('removeAllRows - Database error: ', event.target.error.code,
-            " - ", event.target.error.message);
+        this.DBOpenRequest.onerror = (event) => {
+            console.log('removeAllRows - Database error: ', event.target.error.code, " - ", event.target.error.message);
         };
 
-        request.onsuccess = (event) => {
+        this.DBOpenRequest.onsuccess = (event) => {
 
             console.log('Deleting all customers...');
 
@@ -48,44 +122,6 @@ class Customer {
         }
     }
 
-    /**
-     * Populate the Customer database with an initial set of customer data
-     * @param {[object]} customerData Data to add
-     * @memberof Customer
-     */
-    initialLoad = (customerData) => {
+}
 
-        const request = indexedDB.open(this.dbName, 1);
-
-        request.onerror = (event) => {
-
-            console.log('initialLoad - Database error: ', event.target.error.code,
-            " - ", event.target.error.message);
-        };
-
-        request.onupgradeneeded = (event) => {
-
-            console.log('Populating customers...');
-
-            const db = event.target.result;
-            const objectStore = db.createObjectStore('customers', { keyPath: 'userid' });
-
-            objectStore.onerror = (event) => {
-
-              console.log('initialLoad - objectStore error: ', event.target.error.code,
-                " - ", event.target.error.message);
-        };
-
-        // Create an index to search customers by name and email
-        objectStore.createIndex('name', 'name', { unique: false });
-        objectStore.createIndex('email', 'email', { unique: true });
-
-        // Populate the database with the initial set of rows
-        customerData.forEach(function(customer) {
-            objectStore.put(customer);
-        });
-
-        db.close();
-      };
-    }
-  }
+export { Customer };

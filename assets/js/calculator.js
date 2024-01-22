@@ -60,21 +60,21 @@ class Calculator extends Core {
         this._padEl = this._el.querySelectorAll('.pad .btn');
 
         if (!this._padEl) {
-            this.logInfo('Pad button not found!');
+            this.logErr('Pad button not found!');
             return;
         }
 
         this._displayEl.accumulator = this._el.querySelector('.display .accumulator');
 
         if (!this._displayEl.accumulator) {
-            this.logInfo('Display accumulator not found!');
+            this.logErr('Display accumulator not found!');
             return;
         }
 
         this._displayEl.total = this._el.querySelector('.display .total');
 
         if (!this._displayEl.total) {
-            this.logInfo('Display total not found!');
+            this.logErr('Display total not found!');
             return;
         }
 

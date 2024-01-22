@@ -91,7 +91,7 @@ class BorderRadius extends Core {
         this._borderRadius.top.left.el = this._el.querySelector('#border-radius-top-left');
 
         if (!this._borderRadius.top.left.el) {
-            this.logInfo('Border radius top left not found!');
+            this.logErr('Border radius top left not found!');
             return;
         }
 
@@ -103,7 +103,7 @@ class BorderRadius extends Core {
         this._borderRadius.top.right.el = this._el.querySelector('#border-radius-top-right');
 
         if (!this._borderRadius.top.right.el) {
-            this.logInfo('Border radius top right not found!');
+            this.logErr('Border radius top right not found!');
             return;
         }
 
@@ -115,7 +115,7 @@ class BorderRadius extends Core {
         this._borderRadius.bottom.right.el = this._el.querySelector('#border-radius-bottom-right');
 
         if (!this._borderRadius.bottom.right.el) {
-            this.logInfo('Border radius bottom right not found!');
+            this.logErr('Border radius bottom right not found!');
             return;
         }
 
@@ -127,7 +127,7 @@ class BorderRadius extends Core {
         this._borderRadius.bottom.left.el = this._el.querySelector('#border-radius-bottom-left');
 
         if (!this._borderRadius.bottom.left.el) {
-            this.logInfo('Border radius bottom left not found!');
+            this.logErr('Border radius bottom left not found!');
             return;
         }
 
@@ -136,14 +136,14 @@ class BorderRadius extends Core {
         this._preview.el = this._el.querySelector('#preview');
 
         if (!this._preview.el) {
-            this.logInfo('Border radius preview not found!');
+            this.logErr('Border radius preview not found!');
             return;
         }
 
         this._displayCode.el = this._el.querySelector('#display-code pre');
 
         if (!this._displayCode.el) {
-            this.logInfo('Display code of border radius not found!');
+            this.logErr('Display code of border radius not found!');
             return;
         }
 

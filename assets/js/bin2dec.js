@@ -79,21 +79,21 @@ class Bin2dec extends Core {
         this._formEl = this._el.querySelector('form');
 
         if (!this._formEl) {
-            this.logInfo('Formulary not found!');
+            this.logErr('Formulary not found!');
             return;
         }
 
         this._binaryInputEl = this._el.querySelector('#binary');
 
         if (!this._binaryInputEl) {
-            this.logInfo('Binary input not found!');
+            this.logErr('Binary input not found!');
             return;
         }
 
         this._decimalInputEl = this._el.querySelector('#decimal');
 
         if (!this._decimalInputEl) {
-            this.logInfo('Decimal input not found!');
+            this.logErr('Decimal input not found!');
             return;
         }
 
