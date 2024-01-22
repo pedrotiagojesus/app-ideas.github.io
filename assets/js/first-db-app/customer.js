@@ -91,23 +91,24 @@ class Customer {
      */
     removeAllRows = () => {
 
-        this.DBOpenRequest.onerror = (event) => {
+        const DBOpenRequest = indexedDB.open(this.dbName, this.dbVersion);
+
+        DBOpenRequest.onerror = (event) => {
             console.log('removeAllRows - Database error: ', event.target.error.code, " - ", event.target.error.message);
         };
 
-        this.DBOpenRequest.onsuccess = (event) => {
-
-            console.log('Deleting all customers...');
+        DBOpenRequest.onsuccess = (event) => {
 
             const db = event.target.result;
-            const txn = db.transaction('customers', 'readwrite');
+            console.log('Deleting all customers...');
 
-            txn.onerror = (event) => {
-                console.log('removeAllRows - Txn error: ', event.target.error.code,
-                " - ", event.target.error.message);
+            const transaction = db.transaction(["customers"], "readwrite");
+
+            transaction.onerror = (event) => {
+                console.log('removeAllRows - Transaction error: ', event.target.error.code, " - ", event.target.error.message);
             };
 
-            txn.oncomplete = (event) => {
+            transaction.oncomplete = (event) => {
                 console.log('All rows removed!');
             };
 
