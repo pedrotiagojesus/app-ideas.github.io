@@ -1,9 +1,12 @@
+import { MenuVertical } from './menu-vertical.js';
 import { Bin2dec } from './bin2dec.js';
 import { BorderRadius } from './border-radius.js';
 import { Calculator } from './calculator.js';
-import { FirstDbApp } from './first-db-app/init.js';
+import { FirstDbApp } from './first-db-app.js';
 
 (function () {
+
+    new MenuVertical('menu-vertical', 'Menu Vertical');
 
     new Bin2dec('bin2dec', 'Bin2dec');
     new BorderRadius('border-radius', 'Border-radius Previewer');
