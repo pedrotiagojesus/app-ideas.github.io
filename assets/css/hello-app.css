@@ -1,0 +1,7 @@
+#hello-app > .card {
+    height: calc(100vh - var(--menu-horizontal-height) - var(--content-padding) - var(--content-padding));
+}
+
+#hello-app #map {
+    height: 100%;
+}

@@ -22,14 +22,6 @@ class FirstDbApp extends Core {
      */
     _el = null;
 
-    /**
-     * Holds a reference to the DOM element object.
-     *
-     * @property {element}
-     * @author Pedro Jesus <pedrotiagojesus1995@gmail.com>
-     */
-    _el = null;
-
     DBOpenRequest = null;
     db = null;
 

@@ -9,8 +9,12 @@ main > .content .card {
     --bs-card-height: 100%;
 }
 
-main > .content .card .card-title{
+main > .content .card .card-header{
     font-weight: 800;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* SM */

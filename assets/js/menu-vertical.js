@@ -114,13 +114,14 @@ class MenuVertical extends Core {
                 { project_id: 2, name: 'Border Radius Previewer', link: './border-radius.html', disabled: false },
                 { project_id: 3, name: 'Calculator', link: './calculator.html', disabled: false },
                 { project_id: 4, name: 'Christmas Lights', link: './christmas-lights.html', disabled: true },
-                { project_id: 5, name: 'Cause Effect App', link: './cause-effect.html', disabled: true },
+                { project_id: 5, name: 'Cause Effect APP', link: './cause-effect.html', disabled: true },
                 { project_id: 6, name: 'Color Cycle', link: './color-cycle.html', disabled: true },
                 { project_id: 7, name: 'Countdown Timer', link: './countdown-timer.html', disabled: true },
-                { project_id: 8, name: 'CSV2JSON App', link: './csv-json.html', disabled: true },
+                { project_id: 8, name: 'CSV2JSON APP', link: './csv-json.html', disabled: true },
                 { project_id: 9, name: 'Dollars to Cents', link: './dollar-cent.html', disabled: true },
                 { project_id: 10, name: 'Dynamic CSS Variables', link: './dynamic-css-variable.html', disabled: true },
-                { project_id: 11, name: 'First BD App', link: './first-db-app.html', disabled: false },
+                { project_id: 11, name: 'First BD APP', link: './first-db-app.html', disabled: false },
+                { project_id: 12, name: 'Hello APP', link: './hello-app.html', disabled: false },
             ];
 
             var transaction = scope.db.transaction(DB_STORE_NAME, 'readwrite');
