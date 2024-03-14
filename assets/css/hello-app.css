@@ -5,3 +5,11 @@
 #hello-app #map {
     height: 100%;
 }
+
+#hello-app #map .leaflet-popup-content {
+    font-size: .8rem;
+}
+
+#hello-app #map .leaflet-popup-content-wrapper {
+    border-radius: 3px;
+}

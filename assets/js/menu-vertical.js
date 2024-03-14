@@ -108,6 +108,10 @@ class MenuVertical extends Core {
 
         return new Promise(async (resolve, reject) => {
 
+            fetch('./app-ideas.json')
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+
             // Customers to add to initially populate the database with
             const projectData = [
                 { project_id: 1, name: 'Bin2Dec', link: './bin2dec.html', disabled: false },

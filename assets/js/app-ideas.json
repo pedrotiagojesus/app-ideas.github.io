@@ -1,0 +1,74 @@
+[
+    {
+        "project_id": 1,
+        "name": "Bin2Dec",
+        "link": "./bin2dec.html",
+        "disabled": false
+    },
+    {
+        "project_id": 2,
+        "name": "Border Radius Previewer",
+        "link": "./border-radius.html",
+        "disabled": false
+    },
+    {
+        "project_id": 3,
+        "name": "Calculator",
+        "link": "./calculator.html",
+        "disabled": false
+    },
+    {
+        "project_id": 4,
+        "name": "Christmas Lights",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 5,
+        "name": "Cause Effect APP",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 6,
+        "name": "Color Cycle",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 7,
+        "name": "Countdown Timer",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 8,
+        "name": "CSV2JSON",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 9,
+        "name": "Dollars to Cents",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 10,
+        "name": "Dynamic CSS Variables",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 11,
+        "name": "First BD APP",
+        "link": "./first-db-app.html",
+        "disabled": false
+    },
+    {
+        "project_id": 12,
+        "name": "First BD APP",
+        "link": "./first-db-app.html",
+        "disabled": false
+    }
+]

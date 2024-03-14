@@ -240,7 +240,7 @@ class HelloApp extends Core {
 
                 var marker = new L.popup()
                 .setLatLng([country.lat, country.lng])
-                .setContent(`<div clss="d-flex align-item-center"><img src="https://flagcdn.com/16x12/${country.iso2}.png" class="me-2">${hello}</div>` )
+                .setContent(`<div class="d-flex align-item-center"><span><img src="https://flagcdn.com/16x12/${country.iso2}.png" class="me-2"></span><span>${hello}</span></div>` )
                 .addTo(scope._map);
 
                 console.log(country, hello);
