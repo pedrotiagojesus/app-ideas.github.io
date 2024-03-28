@@ -31,7 +31,7 @@ class HelloApp extends Core {
             "lng": 17.107137
         },
         {
-            "iso2": "uk",
+            "iso2": "gb-eng",
             "lat": 51.511214,
             "lng": -0.119824
         },
@@ -243,7 +243,6 @@ class HelloApp extends Core {
                 .setContent(`<div class="d-flex align-item-center"><span><img src="https://flagcdn.com/16x12/${country.iso2}.png" class="me-2"></span><span>${hello}</span></div>` )
                 .addTo(scope._map);
 
-                console.log(country, hello);
                 resolve();
 
             }, 2000);

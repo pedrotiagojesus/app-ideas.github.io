@@ -52,117 +52,19 @@
             </nav>
 
             <div id="homepage" class="content">
-                <div class="row">
+                <div id="homepage-content" class="row">
 
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Bin2Dec</h5>
-                                <p class="card-text">Binary-to-Decimal number converter</p>
-                                <a href="./bin2dec.html" class="btn btn-primary">See more</a>
+                    <template id="tpl-homepage-entry">
+                        <div class="col-md-6 col-lg-12 col-xl-6 col-xll-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title" data-tpl="name"></h5>
+                                    <p class="card-text" data-tpl="description"></p>
+                                    <a href="" class="btn btn-primary" data-tpl="url">See more</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Border Radius Previewer</h5>
-                                <p class="card-text">Preview how CSS3 border-radius values affect an element</p>
-                                <a href="./border-radius.html" class="btn btn-primary">See more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Calculator</h5>
-                                <p class="card-text">Calculator</p>
-                                <a href="./calculator.html" class="btn btn-primary disabled">See more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Christmas Lights</h5>
-                                <p class="card-text">Simulate a string of Christmas lights</p>
-                                <a href="./christmas-lights.html" class="btn btn-primary disabled">See more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Cause Effect App</h5>
-                                <p class="card-text">Click list item to display item details</p>
-                                <a href="./cause-effect.html" class="btn btn-primary disabled">See more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Color Cycle</h5>
-                                <p class="card-text">Cycle a color value through incremental changes</p>
-                                <a href="./color-cycle.html" class="btn btn-primary disabled">See more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Countdown Timer</h5>
-                                <p class="card-text">Event Countdown timer</p>
-                                <a href="./countdown-timer.html" class="btn btn-primary disabled">See more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">CSV2JSON App</h5>
-                                <p class="card-text">CSV to JSON converter</p>
-                                <a href="./csv-json.html" class="btn btn-primary disabled">See more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Dollars to Cents</h5>
-                                <p class="card-text">Convert dollars to cents</p>
-                                <a href="./dollar-cent.html" class="btn btn-primary disabled">See more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Dynamic CSS Variables</h5>
-                                <p class="card-text">Dynamically change CSS variable settings</p>
-                                <a href="./dynamic-css-variable.html" class="btn btn-primary disabled">See more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">First DB App</h5>
-                                <p class="card-text">Your first Database app!</p>
-                                <a href="./first-db-app.html" class="btn btn-primary">See more</a>
-                            </div>
-                        </div>
-                    </div>
+                    </template>
 
                 </div>
             </div>

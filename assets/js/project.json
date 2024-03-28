@@ -1,0 +1,149 @@
+[
+    {
+        "project_id": 1,
+        "name": "Bin2Dec",
+        "description": "Bin2Dec is a coding challenge to practice converting binary strings (up to 8 digits) to decimal without using arrays or specific math functions, requiring the developer to implement the conversion logic themselves.",
+        "link": "./bin2dec.html",
+        "disabled": false
+    },
+    {
+        "project_id": 2,
+        "name": "Border Radius Previewer",
+        "description": "A border-radius previewer that lets users see how changing individual corner radii affects a box shape, with optional bonus to support all 8 corner values.",
+        "link": "./border-radius.html",
+        "disabled": false
+    },
+    {
+        "project_id": 3,
+        "name": "CSV2JSON",
+        "description": "CSV2JSON to convert CSV data to JSON format",
+        "link": "./csv2json.html",
+        "disabled": false
+    },
+    {
+        "project_id": 4,
+        "name": "Calculator",
+        "description": "This prompt asks you to build a basic integer calculator app with UI and event handling, focusing on user stories and handling edge cases.",
+        "link": "./calculator.html",
+        "disabled": false
+    },
+    {
+        "project_id": 5,
+        "name": "Calendar",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 6,
+        "name": "Cause Effect APP",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 7,
+        "name": "Christmas Lights",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 8,
+        "name": "Color Cycle",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 9,
+        "name": "Countdown Timer",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 10,
+        "name": "Dollars to Cents",
+        "description": "convert user-entered dollars (including cents) into the fewest possible coins (quarters, dimes, nickels, and pennies).",
+        "link": "./dollars-to-cents.html",
+        "disabled": false
+    },
+    {
+        "project_id": 11,
+        "name": "Dynamic CSS Variables",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 11,
+        "name": "First BD APP",
+        "description": "Built-in browser database for client-side data storage and management in web applications.",
+        "link": "./first-db-app.html",
+        "disabled": false
+    },
+    {
+        "project_id": 12,
+        "name": "Flip Image",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 13,
+        "name": "GitHub Status",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 14,
+        "name": "Hello App",
+        "description": "App concept (Hello) that personalizes greetings based on user location and language.",
+        "link": "hello-app.html",
+        "disabled": false
+    },
+    {
+        "project_id": 15,
+        "name": "IOT Mailbox",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 16,
+        "name": "JSON2CSV",
+        "description": "JSON2CSV to convert JSON data to CSV format.",
+        "link": "./json2csv.html",
+        "disabled": false
+    },
+    {
+        "project_id": 17,
+        "name": "Javascript Validation",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 18,
+        "name": "Key Value",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 19,
+        "name": "Lorem Ipsum Generator",
+        "description": "",
+        "link": "",
+        "disabled": true
+    },
+    {
+        "project_id": 20,
+        "name": "Notes",
+        "description": "",
+        "link": "",
+        "disabled": true
+    }
+]
